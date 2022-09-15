@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>쑤니 디저트 카페 반응형 웹</title>
+  <!-- 여백 초기화 -->
+  <link rel="stylesheet" href="./css/reset.css" type="text/css">
+  
+  <!-- 공통서식 -->
+  <link rel="stylesheet" href="./css/base.css" type="text/css">
+
+  <!-- 모바일 서식 -->
+  <link rel="stylesheet" href="./css/mobile.css" type="text/css">
+
+  <!-- flexslider css -->
+  <link rel="stylesheet" href="./css/flexslider.css" type="text/css">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- 벤더 프리픽스 -->
+  <script src="./script/prefixfree.min.js"></script>
+
+  <!-- 제이쿼리 버전 소스 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  <!-- flex js -->
+  <script src="./script/jquery.flexslider.js"></script>
+  
+</head>
+<body>
+  <input type="checkbox" id="toggle">
+  <!-- 헤더영역 -->
+  <header>
+    <div class="h_inner">
+      <h1>
+        <a href="index.html" title="메인페이지 바로가기">
+          <img src="./images/logo.png" alt="쑤니로고">
+        </a>
+      </h1>
+      <!-- 상단 네비 -->
+      <nav class="h_lnb">
+        <ul>
+          <li><a href="index.html" title="홈으로">home</a></li>
+          <li><a href="franchise.html" title="프렌차이즈">franchise</a></li>
+          <li><a href="event.html" titel="이벤트">event</a></li>
+          <li><a href="join.html" titel="회원가입">join</a></li>
+          <li><a href="login.html" titel="로그인">login</a></li>
+          <li><a href="admin.html" titel="관리자">admin</a></li>
+          <li>
+            <input type="search" id="sh">
+            <label for="sh"><i class="fas fa-search"></i></label>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- 모바일용 토글 버튼과 검색아이콘 -->
+      <label for="toggle" class="toggle_btn"><i class="fas fa-bars"></i></label>
+      <i class="fas fa-search"></i>
+
+      <!-- 메인메뉴 -->
+      <nav class="gnb">
+        <label for="toggle"><i class="fas fa-times"></i></label>
+        <ul>
+          <li><a href="barnd.html" title="브랜드 소개">브랜드 소개 <i class="fas fa-angle-down"></i></a>
+            <ul class="sub">
+              <li><a href="barnd.html" title="브랜드 스토리">브랜드 스토리</a></li>
+              <li><a href="coffee_story.html" title="커피스토리">커피 스토리</a></li>
+            </ul>
+          </li>
+
+          <li><a href="menu.html" title="메뉴 소개">메뉴소개 <i class="fas fa-angle-down"></i></a>
+            <ul class="sub">
+              <li><a href="menu.html" title="베이커리">베이커리</a></li>
+              <li><a href="drink.html" title="음료">음료</a></li>
+              <li><a href="dessert.html" title="디저트">디저트</a></li>
+              <li><a href="food.html" title="푸드">푸드</a></li>
+              <li><a href="goods.html" title="상품">상품</a></li>
+            </ul>
+          </li>
+
+          <li><a href="store.html" title="매장안내">매장안내  <i class="fas fa-angle-down"></i></a>
+            <ul class="sub">
+              <li><a href="store.html" title="매장찾기">매장찾기</a></li>
+            </ul>
+          </li>
+
+          <li><a href="community.html" title="커뮤니티">커뮤니티 <i class="fas fa-angle-down"></i></a>
+            <ul class="sub">
+              <li><a href="community.html" title="고객의 소리">고객의 소리</a></li>
+              <li><a href="qna.html" title="자주묻는 질문">자주묻는 질문</a></li>
+              <li><a href="talk.html" title="상담톡">상담톡</a></li>
+              <li><a href="event.html" title="이벤트">이벤트</a></li>
+            </ul>
+          </li>
+
+          <li><a href="franchise" title="프랜차이즈">프랜차이즈  <i class="fas fa-angle-down"></i></a>
+            <ul class="sub">
+              <li><a href="group.html" title="단체 및 기업">단체 및 기업</a></li>
+              <li><a href="newstore.html" title="신규입점 제의">신규입점 제의</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- 메인영역 -->
+  <main>
+    <article class="slide">
+      <h2>비주얼 슬라이드</h2>
+      <!-- 모바일용 슬라이드 -->
+      <div class="flexslider m_slide">
+        <ul class="slides">
+          <li>
+            <a href="event1.html">
+              <img src="./images/m_main01.jpg" alt="메인 슬라이드1">
+            </a>
+          </li>
+
+          <li>
+            <a href="event2.html">
+              <img src="./images/m_main02.jpg" alt="메인 슬라이드2">
+            </a>
+          </li>
+
+          <li>
+            <a href="event3.html">
+              <img src="./images/m_main03.jpg" alt="메인 슬라이드3">
+            </a>
+          </li>
+
+          <li>
+            <a href="event4.html">
+              <img src="./images/m_main04.jpg" alt="메인 슬라이드4" >
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- PC, Tablet용 슬라이드 -->
+      <div class="flexslider pc_slide">
+        <ul class="slides">
+          <li>
+            <a href="event1.html">
+              <img src="./images/main01.jpg" alt="메인 슬라이드1">
+            </a>
+          </li>
+
+          <li>
+            <a href="event2.html">
+              <img src="./images/main02.jpg" alt="메인 슬라이드2">
+            </a>
+          </li>
+
+          <li>
+            <a href="event3.html">
+              <img src="./images/main03.jpg" alt="메인 슬라이드3">
+            </a>
+          </li>
+
+          <li>
+            <a href="event4.html">
+              <img src="./images/main04.jpg" alt="메인 슬라이드4" >
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </article>
+
+    <section class="con">
+      <h2>콘텐츠 영역</h2>
+      <article class="new_item">
+        <h2>신제춤 출시</h2>
+        <a href="new.html" title="신제품 페이지 바로가기">
+          <img src="./images/mbn01ov.png" alt="신체품출시">
+        </a>
+      </article>
+
+
+      <article class="brand">
+        <h2>브랜드 소개</h2>
+        <a href="brand.html" title="브랜드 스토리" class="brand_banner">브랜드스토리</a>
+        <a href="brand.html" title="창업상담 바로가기">
+          <img src="./images/mbn0201.png" alt="창업상담">
+        </a>
+      </article>
+
+      <article class="ad">
+        <h2>방송협찬</h2>
+        <a href="ad.html" title="드라마협찬">
+          <img src="./images/msns.png" alt="드라마협찬">
+        </a>
+      </article>
+
+      <article class="notice">
+        <h2>NOTICE<i class="fas fa-plus"></i></h2>
+        <ul>
+          <li><a href="noticea.html" title="오픈예정점">[오픈예정점] 디저트카페 쑤니 서울 강남점, 화성점,등 여러 지역 추가 오픈 예정</a></li>
+          <li><a href="noticeb.html" title="프로모션1">[프로모션]'달롤달롤해'디저트 세트 3종 할인 이벤트</a></li>
+          <li><a href="noticec.html" title="프로모션2">[프로모션]핫한 여름을 나는 달콤한 방법! 슈니케이크 먹고 즐기자</a></li>
+          <li><a href="noticed.html" title="프로모션3">[프로모션] 디저트카페 쑤니 강남구청역점 파격 할인 시작 당장 들려 싼 가격에 디저트를 즐겨라!</a></li>
+        </ul>
+      </article>
+
+      <article class="store">
+        <h2>매장안내</h2>
+        <a href="store.html" title="매장보기">신규매장안내</a>
+      </article>
+
+      <article class="news">
+        <h2>NEWS<i class="fas fa-plus"></i></h2>
+        <ul>
+          <li><a href="newsa.html">[Next Daily]JH그룹'쑤니', 오픈 1주년 기념 이벤트 예정, JH그룹 회장 '쑤니 맛있게 즐겨 기념으로 열음'</a></li>
+          <li><a href="newsb.html">[이투데이]프리미엄 디저트카페 쑤니, KPHA선수 광고 모델로 선정</a></li>
+          <li><a href="newsb.html">[매일경제]쑤니, 오는 8월까지 빙수&middot;디저트&middot;아침메뉴 등등 신메뉴 런칭 준비중</a></li>
+          <li><a href="newsb.html">[머니S]12회 대구&middot;경북 프랜차이즈 창업 박람회 개시, 들리면 이벤트 상품있음.</a></li>
+        </ul>
+      </article>
+    </section>
+  </main>
+  <!-- 푸터영역 -->
+  <footer>
+    <nav class="f_lnb">
+      <ul>
+        <li><a href="company.html" title="회사소개">회사소개 / 오시는길</a></li>
+        <li><a href="company.html" title="가맹안내">가맹안내</a></li>
+        <li><a href="tel:080-0000-0000" title="가맹문의">가맹문의 : 080-0000-0000</a></li>
+        <li><a href="tel:080-0000-0000" title="일반문의">일반문의 : 080-0000-0000</a></li>
+        <li><a href="tel:080-0000-0000" title="홍보">홍보,마케팅문의 : 080-0000-0000</a></li>
+      </ul>
+    </nav>
+
+    <nav class="sns">
+      <ul>
+        <li><a href="ks.html" title="카카오스토리"><img src="./images/foot_sns01.png" alt="카카오스토리"></a></li>
+        <li><a href="fb.html" title="페이스북"><img src="./images/foot_sns02.png" alt="페이스북 이미지"></a></li>
+        <li><a href="t.html" title="트위터"><img src="./images/foot_sns03.png" alt="트위터 이미지"></a></li>
+        <li><a href="i.html" title="인스타그램"><img src="./images/foot_sns04.png" alt="인스타 이미지"></a></li>
+        <li><a href="b.html" title="블로그"><img src="./images/foot_sns05.png" alt="블로그 이미지"></a></li>
+      </ul>
+    </nav>
+    <address>
+      <p> (주)치어스&amp; 경기도 분당구 성남대로 000번길 0-00 모선빌딩 0층</p>
+      <p>법인등록번호 00000-00000 Copyright&copy;2021 ssunikorea All rights reserved.</p>
+    </address>
+  </footer>
+
+  <script>
+    // Can also be used with $(document).ready()
+  $(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide" /* fade 나 slide 골라서*/
+  });
+});
+  </script>
+</body>
+</html>
